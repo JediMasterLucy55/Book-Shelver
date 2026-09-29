@@ -3,13 +3,11 @@ import pandas as pd
 
 file_path = "goodreads_library_export.csv"
 
-def get_books(file_path):
-    df = pd.read_csv(file_path)
-    return df
-
-books = get_books(file_path)
+books = pd.read_csv(file_path)
 
 def get_titles(books):
-    
+    titles = books['Title']
+    return titles
 
 titles = get_titles(books)
+
